@@ -8,8 +8,14 @@ import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 })
 export class AppComponent {
   title = 'Hello World!';
-  foto = 'favicon.ico'
+  foto = 'favicon.ico';
+  peso = 0;
+  altura = 0;
   exibir(){
     alert(this.title);
+  }
+  IMC(){
+    let imc = this.peso/(this.altura*this.altura)
+      alert(imc);
   }
 }
