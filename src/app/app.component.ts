@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'has-root',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hello World!';
   foto = 'favicon.ico'
+  exibir(){
+    alert(this.title);
+  }
 }
